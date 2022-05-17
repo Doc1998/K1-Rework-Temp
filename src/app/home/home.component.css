@@ -1,0 +1,438 @@
+* {
+  max-width: 100%;
+  overflow-x: hidden !important;
+  overflow: initial !important;
+}
+header {
+  display: flex;
+  font-size: clamp(0.5em, 3vw, 1.2em);
+  color: black;
+  font-family: poppins-bold;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #0ff,
+    0 0 1px #0ff;
+  box-shadow: -5px 0 22px -1px rgb(0 0 0 / 15%);
+}
+.title {
+  padding-left: 10px;
+  width: 40%;
+}
+.navList {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  font-family: poppins;
+  width: 50%;
+}
+.signup{
+  font-size: 1em;
+  background-color: blue;
+  font-family: poppins;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.signup:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.login{
+  color: blue !important;
+  font-family: poppins-bold;
+}
+.login:hover{
+  color: black !important;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+header li {
+  white-space: nowrap; /*keeps text on one like */
+  cursor: pointer;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+/* Header ends */
+body {
+}
+.description {
+  font-size: clamp(0.3em, 3vw, 1.2em);
+  color: black;
+  font-family: poppins;
+  font-weight: 100;
+}
+.descTop {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.descBtm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.descBtm h3 {
+  padding: 2px;
+}
+
+/* Event Card */
+.eventCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.container {
+  width: 25vw;
+  height: 45vh;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 1.5s;
+  cursor: pointer;
+}
+.container:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.cardPoster {
+  height: 70%;
+  width: 100%;
+  background-color: rgb(202, 158, 158);
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bottomHalf {
+  background-color: rgb(226, 245, 245);
+  height: 30%;
+}
+.cardInformation {
+  display: flex;
+  flex-direction: column;
+}
+.posterImg {
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+.cardPrice {
+  font-family: poppins;
+  text-align: center;
+  margin-top: 2%;
+}
+.cardDate {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cardTitle {
+  font-family: poppins-bold;
+  text-align: center;
+  margin-top: 2%;
+}
+.cardBtn {
+}
+/*
+button{
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 40%);
+  color: white;
+  background-color: blue;
+  cursor:pointer;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: clamp(0.5em,3vw,1.5em);
+  margin: 5%;
+}
+*/
+
+/* Event Card */
+.about {
+  color: black;
+  font-size: clamp(0.01em, 4vw, 1.5em);
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5%;
+  background-color: rgb(255, 239, 239);
+}
+.aboutTitle {
+  display: flex;
+  justify-content: flex-start;
+  font-family: poppins-bold;
+}
+.about ul {
+  display: flex;
+  flex-direction: column;
+}
+.about li {
+  list-style-type: none;
+  font-size: clamp(0.5em, 4vw, 2em);
+}
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 3%;
+  width: 70%;
+}
+.text {
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  font-family: poppins-light;
+}
+.text h5 {
+  margin: 1%;
+}
+.paragraph img {
+  width: 25%;
+}
+.highlight {
+  text-decoration: underline;
+  font-family: poppins;
+}
+.textImage {
+  font-size: 4em;
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* compare cards */
+
+/* uses */
+.uses {
+  display: flex;
+  flex-direction: column;
+  height: 160vh;
+  width: 100vw;
+  margin-top: 2%;
+}
+.useA,
+.useB,
+.useC,
+.useD {
+  display: flex;
+  height: 100%;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(57, 132, 230);
+  border-radius: 5px;
+  font-family: poppins-bold;
+  text-align: center;
+  font-size: clamp(0.7em, 2vw, 1.1em);
+  color: white;
+  transition: transform 1.5s;
+  width: 25%;
+}
+.useD:hover,
+.useA:hover,
+.useB:hover,
+.useC:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.iconUseCases {
+  font-size: 4em;
+}
+.top {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 2%;
+}
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 5%;
+}
+.useTop {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.useBottom {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.useA {
+  border-top-left-radius: 50%;
+}
+.useB {
+  border-bottom-right-radius: 50%;
+}
+.useC {
+  border-top-right-radius: 50%;
+}
+.useD {
+  border-top-left-radius: 50%;
+}
+/* uses end */
+
+/* Contact */
+
+.contact {
+  width: 100%;
+  height: 80vh;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  background-color: rgb(255, 239, 239);
+  font-family: poppins;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contactDetails {
+  font-family: poppins-light;
+}
+/* Contact end */
+@media (min-width: 1px) and (max-width: 819px) {
+  .eventCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .container {
+    width: 65vw;
+    height: 45vh;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  .cardPoster {
+    height: 70%;
+    width: 100%;
+    background-color: rgb(202, 158, 158);
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .bottomHalf {
+    background-color: rgb(226, 245, 245);
+    height: 30%;
+  }
+  .cardInformation {
+    display: flex;
+    flex-direction: column;
+  }
+  .posterImg {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+  }
+
+  .cardPrice {
+    font-family: poppins;
+    text-align: center;
+    margin-top: 2%;
+  }
+  .cardDate {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(0.4em, 3vw, 1.6em);
+  }
+  .cardTitle {
+    font-family: poppins-bold;
+    text-align: center;
+    margin-top: 2%;
+  }
+  .cardBtn {
+  }
+  /* compare cards */
+  .compare {
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .benfitList {
+    font-family: poppins;
+    font-size: clamp(0.4em, 4vw, 1.8em);
+  }
+  .paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .textImage {
+    display: none;
+  }
+  .top,
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75%;
+  }
+  .useA,
+  .useB,
+  .useC,
+  .useD {
+    margin-top: 5%;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .uses {
+    height: 250vh;
+  }
+  .iconUseCases {
+    font-size: 6em;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .useText {
+    font-size: 2em;
+  }
+  .text{
+    width: 85%;
+  }
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('/assets/Poppins-Medium.ttf');
+}
+@font-face {
+  font-family: 'poppins-light';
+  src: url('/assets/Poppins-Light.ttf');
+}
+@font-face {
+  font-family: 'poppins-bold';
+  src: url('/assets/Poppins-Bold.ttf');
+}

@@ -1,0 +1,120 @@
+* {
+  max-width: 100%;
+  overflow-x: hidden !important;
+  overflow: initial !important;
+}
+header {
+  display: flex;
+  font-size: clamp(0.5em, 3vw, 1.2em);
+  color: black;
+  font-family: poppins-bold;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #0ff,
+    0 0 1px #0ff;
+  box-shadow: -5px 0 22px -1px rgb(0 0 0 / 15%);
+}
+.signup{
+  padding: .2em ;
+  background-color: blue;
+  font-family: poppins;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.signup:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.login{
+  color: blue !important;
+  font-family: poppins-bold;
+}
+.login:hover{
+  color: black !important;
+}
+.title {
+  padding-left: 10px;
+  width: 40%;
+}
+.navList {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  font-family: poppins;
+  width: 50%;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+header li {
+  white-space: nowrap; /*keeps text on one like */
+  cursor: pointer;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+/* Header ends */
+
+.contact {
+  width: 100%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  background-color: rgb(255, 239, 239);
+  font-family: poppins;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.loginSection {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: poppins-light;
+}
+.contactDetails {
+  font-family: poppins-light;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+  font-size: clamp(0.6em, 6vw, 1.2em);
+  margin-left: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media (min-width: 1px) and (max-width: 819px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .useText {
+    font-size: 2em;
+  }
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('/assets/Poppins-Medium.ttf');
+}
+@font-face {
+  font-family: 'poppins-light';
+  src: url('/assets/Poppins-Light.ttf');
+}
+@font-face {
+  font-family: 'poppins-bold';
+  src: url('/assets/Poppins-Bold.ttf');
+}
