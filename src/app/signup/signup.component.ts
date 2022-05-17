@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ToastrService } from 'ngx-toastr';
 import { LoginRequestPayLoad } from '../login/login.request.payload';
 import { AuthService } from '../shared/auth.service';
 import { SignupRequestPayLoad } from './signupRequest.payload';
@@ -14,7 +13,7 @@ import { SignupRequestPayLoad } from './signupRequest.payload';
 export class SignupComponent implements OnInit {
   signupRequestPayload: SignupRequestPayLoad;
   signupForm: FormGroup;
-  constructor(private authService: AuthService,private router: Router,private toastr:ToastrService) {
+  constructor(private authService: AuthService) {
     this.signupRequestPayload = {
       email: '',
       password: '',
@@ -28,16 +27,7 @@ export class SignupComponent implements OnInit {
     })
   }
   signup(){
-    this.signupRequestPayload.email = this.signupForm?.get('email')?.value;
-    this.signupRequestPayload.password = this.signupForm.get('password')?.value;
-
-    this.authService.signup(this.signupRequestPayload).subscribe(data => {
-      this.router.navigate(['login'],
-        { queryParams: { registered: 'true' } });
-    }, error => {
-      this.toastr.error('Registration failed, username or email may already exist');
-    });
-
+    
   }
   scroll(el: HTMLElement) {
     el.scrollIntoView({ behavior: 'smooth', block: 'center' });

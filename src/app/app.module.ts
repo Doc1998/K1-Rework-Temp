@@ -7,8 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
-import { NgxWebstorageModule } from 'ngx-webstorage';
-import { ToastrModule } from 'ngx-toastr';
+//import { NgxWebstorageModule } from 'ngx-webstorage';
+//import { ToastrModule } from 'ngx-toastr';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './token-interceptor';
 import { HttpClientModule } from '@angular/common/http';
@@ -23,19 +23,18 @@ import { LoginComponent } from './login/login.component';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    NgxWebstorageModule.forRoot(),
-    ToastrModule.forRoot(), // ToastrModule added
+    //NgxWebstorageModule.forRoot(),
+    //ToastrModule.forRoot(), // ToastrModule added
     //MatIconModule
   ],
-  providers: [ {
-    provide: HTTP_INTERCEPTORS,
-    useClass: TokenInterceptor,
-    multi: true
-  }],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent],
-  exports: [
-    FormsModule,
-    ReactiveFormsModule
-  ]
+  exports: [FormsModule, ReactiveFormsModule],
 })
 export class AppModule {}

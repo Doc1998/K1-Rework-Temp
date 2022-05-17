@@ -23,7 +23,7 @@ header {
   font-family: poppins;
   width: 50%;
 }
-.signup{
+.signup {
   font-size: 1em;
   background-color: blue;
   font-family: poppins;
@@ -33,14 +33,14 @@ header {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
 }
-.signup:hover{
+.signup:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.login{
+.login {
   color: blue !important;
   font-family: poppins-bold;
 }
-.login:hover{
+.login:hover {
   color: black !important;
 }
 header ul {
@@ -97,7 +97,9 @@ body {
   cursor: pointer;
 }
 .container:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .cardPoster {
   height: 70%;
@@ -168,6 +170,7 @@ button{
   display: flex;
   justify-content: flex-start;
   font-family: poppins-bold;
+  color: ;
 }
 .about ul {
   display: flex;
@@ -242,7 +245,9 @@ button{
 .useA:hover,
 .useB:hover,
 .useC:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .iconUseCases {
   font-size: 4em;
@@ -289,6 +294,39 @@ button{
 }
 /* uses end */
 
+/* GUIDE */
+.guide {
+  background-color: #0f1235;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.guide .aboutTitle {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.divider{
+  position: absolute;
+  overflow: hidden;
+  width: 4%;
+  height: 100vh;
+  border-radius: 999px;
+  background-image: url(https://uploads-ssl.webflow.com/626158b…/626258d…_social_noodle%20bar-vertical.png);
+  background-position: 50% 50%;
+  background-size: 24px;
+  background-repeat: repeat-y;
+}
+.split{
+  display: flex;
+}
+.leftGuide{
+  width: 48%;
+}
+.rightGuide{
+  width: 48%;
+}
+/* END GUIDE */
 /* Contact */
 
 .contact {
@@ -419,7 +457,7 @@ button{
   .useText {
     font-size: 2em;
   }
-  .text{
+  .text {
     width: 85%;
   }
 }
